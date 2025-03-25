@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Pages Site</title>
+    <title>Credit Risk Analysis Reports</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,41 +12,127 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f5f5f5;
         }
         h1 {
             color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
         }
         .container {
             background-color: #ecf0f1;
             border-radius: 5px;
             padding: 20px;
             margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .report-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .report-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .report-icon {
+            margin-right: 10px;
+            color: #3498db;
         }
         a {
             color: #3498db;
             text-decoration: none;
+            display: block;
+            padding: 10px 0;
         }
         a:hover {
             text-decoration: underline;
         }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site!</h1>
+    <h1>Credit Risk Analysis Reports</h1>
 
     <div class="container">
-        <h2>About This Site</h2>
-        <p>This is a simple welcome page for my GitHub Pages site. Feel free to explore the other pages:</p>
-        <ul>
-            <li><a href="TC3_4/bureau_report.html">bureau report</a></li>
-            <li><a href="TC3_4/bureau_balance_report.html">bureau balance report</a></li>
-            <li><a href="TC3_4/credit_risk.html">notebook preview TC3_4</a></li>
-        </ul>
+        <h2>Data Profile Reports</h2>
+        <p>Explore detailed profile reports for each dataset used in the credit risk analysis:</p>
+        
+        <div class="reports-grid">
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>Main Training Data</h3>
+                <p>Primary dataset used for model training.</p>
+                <a href="train_report.html">View Train Report</a>
+            </div>
+            
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>Bureau Data</h3>
+                <p>Credit bureau information for applicants.</p>
+                <a href="bureau_report.html">View Bureau Report</a>
+            </div>
+            
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>Bureau Balance</h3>
+                <p>Monthly balance information from credit bureau.</p>
+                <a href="bureau_balance_report.html">View Bureau Balance Report</a>
+            </div>
+            
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>Credit Card Balance</h3>
+                <p>Monthly credit card balance information.</p>
+                <a href="credit_card_balance_report.html">View Credit Card Balance Report</a>
+            </div>
+            
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>Installments Payments</h3>
+                <p>Repayment history for previous loans.</p>
+                <a href="installments_payments_report.html">View Installments Report</a>
+            </div>
+            
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>POS Cash Balance</h3>
+                <p>Point of sale and cash loan balance information.</p>
+                <a href="POS_CASH_balance_report.html">View POS Cash Balance Report</a>
+            </div>
+            
+            <div class="report-card">
+                <h3><i class="report-icon">📊</i>Previous Applications</h3>
+                <p>Information on previous loan applications.</p>
+                <a href="previous_application_report.html">View Previous Applications Report</a>
+            </div>
+        </div>
     </div>
 
     <div class="container">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer/designer/automation engineer who loves creating and sharing projects on GitHub.</p>
+        <h2>Jupyter Notebook</h2>
+        <p>View the complete analysis notebook with code and visualizations:</p>
+        <div class="report-card">
+            <h3><i class="report-icon">📓</i>Credit Risk Analysis Notebook</h3>
+            <p>Complete data science workflow for credit risk prediction.</p>
+            <a href="credit_risk.html">View Notebook</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>About This Project</h2>
+        <p>This project analyzes credit risk using multiple datasets to predict the likelihood of loan default. The analysis includes data profiling, feature engineering, and machine learning models to identify key risk factors.</p>
     </div>
 
     <footer>
