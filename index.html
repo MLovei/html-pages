@@ -96,9 +96,35 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* About Me button styles */
+        .about-me-button {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+            text-decoration: none;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .about-me-button:hover {
+            background-color: #2980b9;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
+    <!-- About Me button -->
+    <a href="profile.html" class="about-me-button">About Me</a>
+
     <h1>Martynas Loveikis</h1>
 
     <div class="subtitle">
