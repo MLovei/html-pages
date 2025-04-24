@@ -1,0 +1,97 @@
+/* Main SVG container styling */
+.header-svg {
+  width: 100vw;
+  position: fixed;
+  top: -5px;
+  transform: rotate(180deg);
+  overflow: visible;
+}
+
+/* Text elements within SVG */
+.header-svg text {
+  transform-origin: 50% 50%;
+  transform: translate(0%, -40%) rotate(180deg);
+}
+
+/* Image elements within SVG */
+.header-svg image {
+  transform-origin: 50% 50%;
+  transform: translate(0%, -40%) rotate(180deg);
+}
+
+/* Header rectangle styling */
+.headerRect {
+  fill: black;
+  fill-opacity: 20%;
+}
+
+.headerRect:hover {
+  fill: #ffd470;
+  fill-opacity: 50%;
+}
+
+/* Wave animation elements */
+.wave {
+  animation: wave 12s linear infinite;
+  fill: #E4D00A;  /* Citrine color */
+}
+
+.wave:hover {
+  fill: #9ea300;
+}
+
+#wave1 {
+  opacity: 1;
+}
+
+#wave2 {
+  animation-duration: 15s;
+  animation-direction: reverse;
+  opacity: 0.4;
+}
+
+#wave3 {
+  animation-duration: 18s;
+  opacity: 0.2;
+}
+
+/* Wave animation keyframes */
+@keyframes wave {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Top line styling */
+.top-line {
+  fill: #AAA;
+  fill-opacity: 50%;
+}
+
+/* Text styling */
+.name-text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-family: "Courier New";
+  font-size: 0.22em;
+  fill: black;
+  font-weight: bold;
+}
+
+.description-text {
+  font-family: Helvetica;
+  font-size: 0.12em;
+  fill: black;
+  text-anchor: end;
+  alignment-baseline: hanging;
+  font-style: italic;
+}
+
+/* Filter effect */
+.goo-filter feGaussianBlur {
+  stdDeviation: 1;
+}
+
+.goo-filter feColorMatrix {
+  values: "1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 13 -9";
+}
